@@ -1,7 +1,7 @@
 import { useParams, useLoaderData } from 'remix';
 
 export async function loader() {
-  let res = await fetch("http://pixelprowess.com/i/cast.json");
+  let res = await fetch("https://pixelprowess.com/i/cast.json");
   return res.json();
 }
 

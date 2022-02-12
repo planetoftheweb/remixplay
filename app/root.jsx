@@ -9,6 +9,7 @@ import {
 
 import styles from "@picocss/pico/css/pico.css";
 import sharedStyles from './styles/shared.css';
+import Navbar from "./navbar";
 
 export function meta() {
   return { title: "New Remix App" };
@@ -31,6 +32,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Navbar />
         <div className="container" style={{ marginTop: 20 + 'px' }}>
           <Outlet />
         </div>
